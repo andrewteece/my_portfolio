@@ -1,3 +1,25 @@
+.menu__btn {
+  position: absolute;
+  z-index: 3;
+  right: 2.1875rem;
+  top: 2.1875rem;
+  cursor: pointer;
+  transition: all 0.6s ease-out; }
+  .menu__btn .btn__line {
+    width: 1.75rem;
+    height: .1875rem;
+    margin: 0 0 .3125rem 0;
+    background: white;
+    transition: all 0.6s ease-out; }
+  .menu__btn.close {
+    transform: rotate(180deg); }
+    .menu__btn.close .btn__line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .menu__btn.close .btn__line:nth-child(2) {
+      opacity: 0; }
+    .menu__btn.close .btn__line:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px); }
+
 * {
   box-sizing: border-box; }
 
