@@ -9,10 +9,11 @@
 body {
     @include background;
     background: $primary-color;
-    color: hsl(0, 0%, 100%);
+    color: set-text-color($primary-color);
     font-family: 'Montserrat', sans-serif;
+    max-width: 90rem;
     height: 100%;
-    margin: 0;
+    margin: 0 auto;
     line-height: 1.5;
 }
 
@@ -52,8 +53,8 @@ header {
 
 main {
     padding: 4rem;
-    height: 100%;
-    // min-height: calc(100vh - 3.75rem);
+    //height: 100%;
+    min-height: calc(100vh - 3.75rem);
 
     .icons {
         margin-top: 1rem;
@@ -76,3 +77,56 @@ main {
       }
     }
 }
+
+// ABOUT PAGE 
+
+.about__info {
+    display: grid;
+    gap: 1.875rem;
+    grid-template-areas: 
+    'bioimage bio bio'
+    'job1 job2 job3';
+    grid-template-columns: repeat(3, 1fr);
+
+    .bio__image {
+        grid-area: bioimage; 
+        margin: auto;
+        border-radius: 50%;
+        border: 3px solid $secondary-color;
+     }
+     
+     .bio {
+         grid-area: bio;
+         font-size: 1.5rem;
+     }
+     
+     .job__1 {
+         grid-area: job1;
+     }
+     
+     .job__2 {
+         grid-area: job2;
+     }
+     
+     .job__3 {
+         grid-area: job3;
+     }
+     
+     .job {
+       background: lighten($primary-color, 5); 
+       padding: 1rem;
+       border-bottom: 5px solid $secondary-color;
+       border-radius: 10px;
+     
+     }
+}
+
+#main__footer {
+    text-align: center;
+    padding: 1rem;
+    background: darken($primary-color, 10);
+    color: set-text-color($primary-color);
+    height: 3.75rem;
+}
+
+
