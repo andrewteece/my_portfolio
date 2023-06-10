@@ -81,13 +81,17 @@
       margin-top: 10vh;
     }
 
-    .lg-heading {
+    .lg__heading {
       margin-top:1rem;
-      font-size: 3rem;
+      font-size: 2rem;
     }
   }
 
   .projects {
     grid-template-columns: 1fr; 
   }
+  .contact__info div {
+    font-size: 1rem;
+  }
+
 }

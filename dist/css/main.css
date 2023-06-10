@@ -199,6 +199,26 @@ main {
       border-color: #eece1b;
       transition: all 0.6s ease-out; }
 
+.contact__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .contact__info div {
+    font-size: 2rem;
+    border: 3px solid white;
+    border-radius: .625rem;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.6s ease-out; }
+    .contact__info div:hover, .contact__info div:focus {
+      padding: 0.5rem 1.5rem;
+      background: #eece1b;
+      color: black; }
+      .contact__info div:hover span, .contact__info div:focus span {
+        color: black; }
+
 .btn, .btn__dark, .btn__light {
   display: block;
   padding: 0.5rem 1rem;
@@ -270,8 +290,10 @@ main {
     padding: 2rem; }
     main #home h1 {
       margin-top: 10vh; }
-    main .lg-heading {
+    main .lg__heading {
       margin-top: 1rem;
-      font-size: 3rem; }
+      font-size: 2rem; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .contact__info div {
+    font-size: 1rem; } }
