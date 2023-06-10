@@ -2,13 +2,17 @@
 // XL SCREENS 
 
 @include mediaXl {
-     
+   .projects {
+    grid-template-columns: repeat(4, 1fr);
+   }  
 }
 
 // LG SCREENS 
 
 @include mediaLg {
-     
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+   }     
 }
 
 // MD SCREENS 
@@ -62,6 +66,10 @@
 
     grid-template-columns: 1fr;
   }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+   }  
 }
 
 // SM SCREENS 
@@ -80,6 +88,6 @@
   }
 
   .projects {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
   }
 }

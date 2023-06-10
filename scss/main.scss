@@ -121,6 +121,57 @@ main {
      }
 }
 
+// MY WORK/PROJECTS
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    
+
+    img {
+        width: 100%;
+        border: 2px solid hsl(0, 0%, 100%);
+        border-radius: .625rem;
+
+       &:hover,
+       &:focus {
+        opacity: 0.6;
+        border-color: $secondary-color; 
+        @include easeOut;
+       } 
+    }
+}
+
+// BUTTON STYLES
+
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: .625rem;
+  margin-bottom: 0.3rem;
+
+  &:hover,
+  &:focus {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+    @include easeOut;
+  }
+}
+
+.btn__dark {
+   @extend .btn; 
+   background: darken($primary-color, 50);
+   color: hsl(0, 0%, 100%);
+}
+
+.btn__light {
+  @extend .btn;
+  background: lighten($primary-color, 50);
+   color: hsl(0, 0%, 20%);
+}
+
 #main__footer {
     text-align: center;
     padding: 1rem;
